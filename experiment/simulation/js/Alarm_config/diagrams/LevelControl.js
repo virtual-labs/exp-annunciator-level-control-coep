@@ -7,10 +7,16 @@ function LevelControl(){
     //x = 310;
 	//y = 160;
 	
-	x = 90;
-	y = 180;
-
 	
+
+	if ($(window).width() <= 1368) {
+	  x = 90;
+	y = 50;
+  }else
+  {
+   x = 90;
+	y = 180;
+  }	
 	
 	
 	var LC_tank = LC_Tank(x,y);
